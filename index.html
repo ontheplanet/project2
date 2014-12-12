@@ -24,6 +24,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   <!-- Load the page styles. -->
   
   <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+  <script src="css/bootstrap.min.css" type="text/javascript"></script>
   <link href="css/style.css" rel="stylesheet" type="text/css">
 
   <!--
@@ -48,7 +49,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   Uncomment the <script> tag below when you're ready to add an interactive
   Google Map to your resume!
   -->
-  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> -->
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> 
 
   <meta name="viewport" content="width=device-width">
 </head>
@@ -66,20 +67,20 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
       <ul id="topContacts" class='flex-box'></ul>
     </div>
     <div style='clear: both;'></div>
-    <div id="workExperience" class='gray'>
+    <div id="workExperience" >
       <h2 class = "section-header">Work Experience</h2>
-    </div>
+      </div>
     <div id="projects">
       <h2 class = "section-header">Projects</h2>
-    </div>
-    <div id="education" class='gray'>
+      </div>
+    <div id="education">
       <h2 class = "section-header">Education</h2>
-    </div>
+      </div>
     <div id="mapDiv">
       <h2 class = "section-header">Where I've Lived and Worked</h2>
     </div>
     <div id="letsConnect" class='dark-gray'>
-      <h2 class='center-text footer'>Let's Connect</h2>
+      <h2 class='text-center footer'><a href="#">Let's Connect</a></h2>
         <ul id="footerContacts" class="flex-box">
       </ul>
     </div>
@@ -116,7 +117,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     */
 
 
-    if(document.getElementsByClassName('flex-item').length === 0) {
+/*    if(document.getElementsByClassName('flex-item').length === 0) {
       document.getElementById('topContacts').style.display = 'none';
     }
     if(document.getElementsByTagName('h1').length === 0) {
@@ -136,7 +137,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     }
     if(document.getElementById('map') === null) {
       document.getElementById('mapDiv').style.display = 'none';
-    }
+    }*/
   </script>
 </body>
 </html>

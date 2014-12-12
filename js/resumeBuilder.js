@@ -69,7 +69,7 @@ var education = {
 		'name':'Chinese Agricultural University',
 		'yearsAttended':'4',
 		'location':'Beijing, China',
-		'degree':'BA',
+		'degree':'BS',
 		'major':'biology sciences',
 		'dates':'2003',
 		'url':'http://www.cau.edu'
@@ -78,21 +78,28 @@ var education = {
 	{
 		'title':'JavasScript Basics',
 		'school':'Udacity',
-		'dates':'2014',
+		'dates':'October 2014',
 		'url':"http://www.udacity.com/course/ud804"
 	},
 	{
 		'title':'Intro to HTML and CSS',
 		'school':'Udacity',
-		'dates':'2014',
+		'dates':'October 2014',
 		'url':"http://www.udacity.com/course/ud304"
 	},
 	{
-		'title':'Intro to Computer Science',
+		'title':'Intro to Computer Scence',
 		'school':'Udacity',
-		'dates':'2014',
+		'dates':'May 2014',
 		'url':"http://www.udacity.com/course/ud804"
-	}
+	},
+	{
+        "title": "HTML & CSS Track",
+        "school": "Codecademy",
+        "dates": "September 2014",
+        "url": "http://www.codecademy.com"
+        }
+
 	]
 };
 
@@ -174,7 +181,7 @@ education.display = function() {
 			var formattedSchoolLocation = HTMLschoolLocation.replace("%data%",education.schools[school].location);
 			var formattedSchoolDegree = HTMLschoolDegree.replace("%data%",education.schools[school].degree);
 			var formattedSchoolMajor = HTMLschoolMajor.replace("%data%",education.schools[school].major);
-			$(".education-entry:last").append(formattedSchoolName+formattedSchoolMajor+formattedSchoolDegree+formattedSchoolDates+formattedSchoolLocation);
+			$(".education-entry:last").append(formattedSchoolName+formattedSchoolDegree+formattedSchoolDates+formattedSchoolLocation+formattedSchoolMajor);
 
 		};
 	}
@@ -185,7 +192,7 @@ education.display = function() {
 		var formattedolTitle = HTMLonlineTitle.replace("%data%",education.onlineCourses[course].title);
 		var formattedschool = HTMLonlineSchool.replace("%data%",education.onlineCourses[course].school);
 		var formattedoldates = HTMLonlineDates.replace("%data%",education.onlineCourses[course].dates);
-		var formattedURL = HTMLonlineURL.replace("%data%",education.onlineCourses[course].url);
+		var formattedURL = HTMLonlineURL.replace(/%data%/g,education.onlineCourses[course].url);
 
 		$(".online-entry:last").append(formattedolTitle + formattedschool + formattedoldates + formattedURL);
 };
