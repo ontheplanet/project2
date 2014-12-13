@@ -266,7 +266,7 @@ span {
 #mapDiv {
   height: 400px;
   width: 100%;
-  padding-bottom: 5%;
+  padding-bottom: 4%;
 }
 
 @media only screen and (min-width: 750px) {
