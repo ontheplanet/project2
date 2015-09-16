@@ -112,7 +112,7 @@ var education = {
 	{
 		'title':'Nanodegree Front-End Web Developer',
 		'school':'Udacity',
-		'dates':'October 2014 - Present',
+		'dates':'October 2014 - 2015 ',
 		'url':"https://www.udacity.com/course/nd001"
 	}
 
@@ -124,8 +124,8 @@ var projects ={
 	{
         "title":"Nanodegree Front-End Web Developer",
         "date":"2014-2015",
-        "description":"By completing a series of prejects, Nanodegree for Front-End Web Developer will certificate. Project 1 (Mockup to Website) and project 2 (Interactive Resume) are completed by now. Project 3 (Classic Arcade Game Clone) is on going",
-        "image":["images/project1ss.png","images/project2ss.png"]
+        "description":"By completing a series of projects, Nanodegree for Front-End Web Developer will certificate. Project 1 (Mockup to Website), project 2 (Interactive Resume), Project 3 (Classic Arcade Game Clone) and project 4 () are completed.
+        "image":["images/project1ss.png","images/project2ss.png","images/project3ss.png","images/project4ss.png"]
 	},
 	{
 		"title" : "Android APP",
